@@ -1,0 +1,34 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class JavaActivity2{
+
+    public static void main(String[] as) {
+        
+        Scanner scanner=new Scanner(System.in);
+
+	System.out.println("Enter the first player name : ");
+        String Fname=scanner.nextLine();
+	
+	System.out.println("Enter the second player name : ");
+        String Sname=scanner.nextLine();
+	
+	String[] a1=Fname.split(" ");
+   	String[] a2=Sname.split(" ");
+   	String name=a1[1];
+   	String name1=a2[1];
+
+   	{
+    	
+	System.out.println("Output: ");
+	 if(name.equals(name1))
+	 {
+            System.out.println("Yes");
+        }
+        else {
+            System.out.println("No");
+        }
+}
+}
+}
