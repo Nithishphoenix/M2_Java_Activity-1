@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+import java.util.Scanner;
+
+public class Datatypes {
+
+    public static void main(String[] arg) {
+        
+        Scanner sc=new Scanner(System.in);
+	System.out.println("Enter first name: ");
+        String name1=sc.next();
+	System.out.println("Enter last name: ");
+        String name2=sc.next();
+        
+        int len_name1 = name1.length();
+        int len_name2 = name2.length();
+        System.out.println((("Output: "+ name1.substring(0,1)).toUpperCase()+(name1.substring(1,len_name1).toLowerCase()))+" "+ ((name2.toUpperCase())));
+    }
+}
