@@ -56,7 +56,7 @@ System.out.println("Scored:"+this.runs);
 if(this.session.equalsIgnoreCase("First"))
 {
 runs=runs+1;
-System.out.printf(this.oppTeam+"Need %d to win",runs);
+System.out.printf(this.oppTeam+" Need %d to win",runs);
 }
 else
 {
