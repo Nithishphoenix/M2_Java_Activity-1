@@ -1,0 +1,73 @@
+import java.util.*;
+public class cricket
+{
+Scanner scan=new Scanner(System.in);
+private String teamName;
+private String oppTeam;
+private String session;
+private int runs;
+public void setTeamname(String teamName)
+{
+this.teamName=teamName;
+}
+public void setOppname(String oppTeam)
+{
+    this.oppTeam=oppTeam;
+}
+public void setInningsname(String session)
+{
+this.session=session;
+}
+public void setRuns(int runs)
+{
+this.runs=runs;
+}
+public String getTeam()
+{
+return this.teamName;
+}
+public String getOpp()
+{
+return this.oppTeam;
+}
+public String getsessionname()
+{
+return this.session;
+}
+public int getRuns()
+{
+return this.runs;
+}
+void inputValues()
+{
+System.out.println("Enter the team name:");
+teamName=scan.next();
+System.out.println("Enter the opp name:");
+oppTeam=scan.next();
+System.out.println("Enter the session:");
+session=scan.next();
+System.out.println("Enter the runs:");
+runs=scan.nextInt();
+}
+void displayValues()
+{
+System.out.println("Name:"+this.teamName);
+System.out.println("Scored:"+this.runs);
+if(this.session.equalsIgnoreCase("First"))
+{
+runs=runs+1;
+System.out.printf(this.oppTeam+"Need %d to win",runs);
+}
+else
+{
+System.out.println("Match Ended");
+}
+}
+public static void main(String args[])
+{
+Scanner scan=new Scanner(System.in);
+cricket obj= new cricket();
+obj.inputValues();
+obj.displayValues();
+}
+}
